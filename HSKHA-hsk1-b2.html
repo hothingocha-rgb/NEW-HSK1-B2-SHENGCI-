@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="vi"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- ====== GIÁO VIÊN CHỈ SỬA 1 DÒNG DƯỚI ĐÂY: thay DAN_URL_WEB_APP_VAO_DAY bằng URL Web App (https://script.google.com/macros/s/.../exec), giữ nguyên dấu ngoặc kép ====== -->
+<script>const SCRIPT_URL="https://script.google.com/macros/s/AKfycbzP52C-wj6tNJRhi4K8dA32vE6Qnmw1mwaXyRi6B7wfx8_9LCKQJwHP_TRROBSkXHA/exec";</script>
+<title>Học tiếng Trung Quốc cô Hà – HSK1 – Kiểm tra từ vựng nhanh Bài 2</title>
+<style>
+:root{--c:#c23320;--bg:#fbf6ee;--card:#fff;--ink:#2b2420;--mut:#7a6e65;--ok:#2f7d4f;--okb:#e6f3ea;--no:#b3261e;--nob:#fbe9e7;--line:#e8dccb}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.6 "Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif}
+header{background:var(--c);color:#fff;text-align:center;padding:18px 12px}
+header h1{margin:0;font-size:clamp(20px,4.5vw,30px);letter-spacing:.5px}
+header p{margin:4px 0 0;font-size:clamp(15px,3vw,19px);opacity:.95}
+main{max-width:860px;margin:0 auto;padding:14px 12px 40px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin:14px 0}
+.info{font-size:16px;color:var(--mut);text-align:center}
+.who{display:grid;grid-template-columns:2fr 1fr;gap:12px}
+@media(max-width:560px){.who{grid-template-columns:1fr}}
+label{font-weight:700;font-size:16px;display:block;margin-bottom:4px}
+input[type=text],select{width:100%;font:inherit;padding:10px 12px;border:2px solid var(--line);border-radius:10px;background:#fff;color:var(--ink)}
+input:focus,select:focus{outline:none;border-color:var(--c)}
+h2{margin:0 0 4px;font-size:clamp(19px,4vw,23px);color:var(--c)}
+.hint{color:var(--mut);font-style:italic;font-size:16px;margin:0 0 10px}
+.q{padding:12px 0;border-top:1px dashed var(--line)}
+.q:first-of-type{border-top:0}
+.qt{font-size:clamp(19px,4vw,22px)}
+.qt b{color:var(--c)}
+.zh{font-size:1.25em;font-weight:700}
+.opts{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:8px}
+@media(max-width:620px){.opts{grid-template-columns:1fr}}
+.opt{display:flex;align-items:center;gap:8px;border:2px solid var(--line);border-radius:10px;padding:10px 12px;cursor:pointer;min-height:48px}
+.opt input{accent-color:var(--c);width:20px;height:20px;flex:none}
+.opt:has(input:checked){border-color:var(--c);background:#fdeeea}
+.bank{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+@media(max-width:620px){.bank{grid-template-columns:repeat(2,1fr)}}
+.chip{border:2px solid var(--c);border-radius:10px;padding:6px 8px;text-align:center;background:#fdeeea}
+.chip b{font-size:1.3em}.chip small{display:block;color:var(--mut);font-size:14px}
+.line{font-size:clamp(20px,4.2vw,24px);margin:2px 0}
+.line select{display:inline-block;width:auto;min-width:96px;padding:4px 8px;margin:0 4px;font-size:.9em}
+.note{font-style:italic;color:var(--mut);font-size:16px}
+.q.ok{background:var(--okb);border-radius:10px;padding-left:10px;padding-right:10px}
+.q.no{background:var(--nob);border-radius:10px;padding-left:10px;padding-right:10px}
+.fb{font-size:16px;margin-top:6px;font-weight:600}
+.ok .fb{color:var(--ok)}.no .fb{color:var(--no)}
+button{font:inherit;font-weight:700;background:var(--c);color:#fff;border:0;border-radius:12px;padding:14px 22px;cursor:pointer;width:100%;font-size:19px}
+button:disabled{opacity:.6}
+#res{text-align:center;font-size:22px;font-weight:700}
+#msg{text-align:center;margin-top:10px;font-size:16px}
+#timer{position:sticky;top:0;z-index:5;background:#fff;border:2px solid var(--c);border-radius:12px;text-align:center;font-weight:700;font-size:22px;padding:6px;margin:10px 0}
+#timer.low{background:var(--nob);color:var(--no)}
+footer{text-align:center;color:var(--mut);font-size:15px;padding-bottom:24px}
+footer a{color:var(--c)}
+</style></head><body>
+<header><h1>HỌC TIẾNG TRUNG QUỐC CÔ HÀ</h1><p>HSK 1 · Kiểm tra từ vựng nhanh – Bài 2</p></header>
+<main>
+<div class="card who">
+ <div><label for="name">Họ và tên</label><input type="text" id="name" placeholder="Nhập họ và tên" autocomplete="name"></div>
+ <div><label for="cls">Lớp</label><input type="text" id="cls" placeholder="Nhập lớp"></div>
+</div>
+<p class="info">Thời gian: 10 phút | 20 câu | Mỗi câu 0,5 điểm | Tổng: 10 điểm</p>
+<div class="card" id="start"><label for="code">Mã phòng thi</label><input type="text" id="code" placeholder="Nhập mã giáo viên cung cấp" autocomplete="off" style="margin-bottom:12px;text-transform:uppercase"><button id="go">Bắt đầu làm bài (10 phút)</button><div id="smsg" class="note" style="text-align:center;margin-top:8px">Nhập họ tên, lớp và mã phòng thi rồi bấm bắt đầu. Hết giờ bài sẽ tự động nộp.</div></div>
+<div id="exam" hidden><div id="timer">⏱ 10:00</div>
+<div class="card"><h2>I. TRẮC NGHIỆM</h2><p class="hint">Chọn đáp án đúng (A, B hoặc C).</p><div id="p1"></div></div>
+<div class="card"><h2>II. ĐIỀN TỪ</h2><p class="hint">Chọn từ trong khung điền vào chỗ trống (mỗi từ dùng 1 lần). Chọn chữ cái trong ô.</p>
+ <div class="bank" id="bank"></div><div id="p2" style="margin-top:8px"></div></div>
+<div class="card"><div id="res"></div>
+ <button id="send">Nộp kết quả lên Google Sheets</button><div id="msg"></div></div>
+</div></main>
+<footer>© Học tiếng Trung Quốc cô Hà · Zalo: <a href="https://zalo.me/0914490382">0914490382</a></footer>
+<script>
+const BAI="HSK1 - Bài 2";
+const SHOW_SCORE=true; // true: hiện điểm cho sinh viên sau khi nộp; false: chỉ giáo viên xem trong Sheets
+const L="ABC",$=s=>document.querySelector(s);
+const OKURL=/^https:\/\/script\.google\.com\//.test(SCRIPT_URL);
+function render(X){
+ $("#p1").innerHTML=X.p1.map((q,i)=>`<div class="q"><div class="qt"><b>Câu ${i+1}.</b> ${q[0].replace(/“(.+?)”/,'“<span class="zh">$1</span>”')}</div><div class="opts">${q[1].map((o,j)=>`<label class="opt"><input type="radio" name="q${i+1}" value="${L[j]}"><span>${L[j]}. ${o}</span></label>`).join("")}</div></div>`).join("");
+ $("#bank").innerHTML=Object.entries(X.bank).map(([k,v])=>`<div class="chip"><b>${k}. ${v[0]}</b><small>${v[1]}</small></div>`).join("");
+ const sel=`<select><option value="">–</option>${Object.entries(X.bank).map(([k,v])=>`<option value="${k}">${k}. ${v[0]}</option>`).join("")}</select>`;
+ $("#p2").innerHTML=X.p2.map((q,i)=>{const n=i+11;return `<div class="q"><div class="qt"><b>Câu ${n}.</b></div>${q.map(t=>t.includes("___")?`<div class="line">${t.split("___").join(sel.replace("<select",`<select name="q${n}"`))}</div>`:`<div class="${t.startsWith("(")?"note":"line"}">${t}</div>`).join("")}</div>`}).join("")}
+const ans=n=>n<=10?(document.querySelector(`input[name=q${n}]:checked`)||{}).value||"":document.querySelector(`select[name=q${n}]`).value;
+const LIMIT=600;let left=LIMIT,tick=null,done=false,CODE="";
+function show(){const m=Math.floor(left/60),s=left%60;$("#timer").textContent=`⏱ ${m}:${String(s).padStart(2,"0")}`;$("#timer").classList.toggle("low",left<=60)}
+function lockStart(){$("#go").disabled=true;$("#smsg").textContent="⛔ Bài thi hiện chưa mở hoặc đã đóng. Vui lòng liên hệ giáo viên."}
+if(OKURL)fetch(SCRIPT_URL+"?action=status").then(r=>r.json()).then(j=>{if(j.open===false)lockStart()}).catch(()=>{});
+$("#go").onclick=async()=>{
+ const name=$("#name").value.trim(),cls=$("#cls").value.trim(),code=$("#code").value.trim();
+ const m=$("#smsg");
+ if(!name||!cls||!code){alert("Vui lòng nhập Họ và tên, Lớp và Mã phòng thi.");return}
+ if(!OKURL){m.textContent="⚠ Trang chưa được cấu hình nơi nhận bài (SCRIPT_URL). Hãy báo giáo viên.";return}
+ $("#go").disabled=true;m.textContent="Đang kiểm tra mã và tải đề…";
+ let j;try{const r=await fetch(SCRIPT_URL+"?action=exam&code="+encodeURIComponent(code));j=await r.json()}catch(e){m.textContent="✗ Không kết nối được, kiểm tra mạng rồi thử lại.";$("#go").disabled=false;return}
+ if(j.closed){lockStart();return}
+ if(!j.ok){m.textContent=j.badcode?"✗ Mã phòng thi không đúng. Hãy hỏi lại giáo viên.":"✗ Máy chủ báo lỗi, hãy báo giáo viên.";$("#go").disabled=false;return}
+ CODE=code;render(j.exam);
+ $("#name").readOnly=$("#cls").readOnly=true;$("#start").style.display="none";$("#exam").hidden=false;
+ show();tick=setInterval(()=>{left--;show();if(left<=0)submit(true)},1000)};
+$("#send").onclick=()=>submit(false);
+const lockAll=v=>document.querySelectorAll("#exam input,#exam select").forEach(e=>e.disabled=v);
+async function submit(auto){
+ if(done)return;
+ const a=[...Array(20)].map((_,i)=>ans(i+1)||"-"),blank=a.filter(x=>x==="-").length;
+ if(!auto&&blank&&!confirm(`Còn ${blank} câu chưa làm. Nộp bài ngay?`))return;
+ done=true;clearInterval(tick);lockAll(true);
+ const b=$("#send");b.disabled=true;$("#msg").textContent="Đang nộp bài…";
+ const body=JSON.stringify({name:$("#name").value.trim(),cls:$("#cls").value.trim(),code:CODE,bai:BAI,seconds:LIMIT-left,answers:a});
+ try{
+  const r=await fetch(SCRIPT_URL,{method:"POST",body});
+  let j={};try{j=await r.json()}catch(e){}
+  if(SHOW_SCORE&&j.ok)$("#res").textContent=`Kết quả: ${j.correct}/20 câu đúng – ${String(j.score).replace(".",",")}/10 điểm`;
+  $("#msg").textContent=j.ok?"✓ Đã nộp bài. Cảm ơn bạn!":(j.closed?"⛔ Bài thi đã đóng, bài của bạn không được ghi nhận. Hãy báo giáo viên.":(j.badcode?"⛔ Mã phòng thi đã thay đổi, bài không được ghi nhận. Hãy báo giáo viên.":"✗ Máy chủ báo lỗi, hãy báo giáo viên."));
+ }catch(e){
+  try{await fetch(SCRIPT_URL,{method:"POST",mode:"no-cors",body});$("#msg").textContent="✓ Đã gửi bài. Hãy hỏi giáo viên để xác nhận đã nhận."}
+  catch(e2){$("#msg").textContent="✗ Gửi chưa được, kiểm tra mạng rồi bấm nộp lại.";done=false;b.disabled=false;lockAll(false)}}
+}
+</script></body></html>
